@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A cozy winter guide to Delhi NCR — pet cafes, sunlit picnics, heritage walks, thrift markets, and the ultimate butter chicken trail." />
+  <title>Delhi Winter Chronicles</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Permanent+Marker&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-wrap">
+
+    <!-- =================== PAGE 1: HOMEPAGE =================== -->
+    <section id="page-home" class="page page-home active" aria-label="Homepage">
+      <!-- painted blobs + spray dots -->
+      <div class="paint-layer" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+        <span class="blob blob-4"></span>
+        <span class="spray spray-1"></span>
+        <span class="spray spray-2"></span>
+      </div>
+
+      <!-- floating stickers / graffiti tags -->
+      <div class="stickers" aria-hidden="true">
+        <span class="sticker sticker-butter">🧈 BUTTER<br/>CHICKEN</span>
+        <span class="sticker sticker-woof">WOOF ♡</span>
+        <span class="sticker sticker-delhi">DELHI 🛺</span>
+        <span class="sticker sticker-chai">chai o'clock ☕</span>
+        <span class="sticker sticker-mubarak">दिल्ली<br/>DIARIES</span>
+        <span class="sticker sticker-heart">us ♡</span>
+      </div>
+
+      <div class="snow" aria-hidden="true"></div>
+
+      <div class="home-inner">
+        <p class="eyebrow">Nov &nbsp;•&nbsp; Dec &nbsp;•&nbsp; Jan &nbsp;•&nbsp; Feb</p>
+        <h1 class="hero-title">
+          <span class="w w-1">Delhi</span>
+          <span class="w w-2">Winter</span>
+          <span class="w w-3">Chronicles</span>
+          <span class="wink">❄️✨</span>
+        </h1>
+        <p class="hero-sub">
+          A little map of our favourite cold-morning walks, sun-drunk picnics,
+          furry-friend hellos, and the never-ending hunt for the city's best
+          butter chicken. Made for two — warm layers, warmer company.
+        </p>
+        <button class="btn btn-primary hero-cta" id="start-btn" type="button">
+          Start Exploring <span aria-hidden="true">✨</span>
+        </button>
+        <p class="hero-footnote">made with mittens &amp; masala chai</p>
+      </div>
+    </section>
+
+    <!-- =================== PAGE 2: CATEGORIES =================== -->
+    <section id="page-categories" class="page page-categories" aria-label="Pick a vibe">
+      <div class="paint-layer paint-layer-cats" aria-hidden="true">
+        <span class="blob blob-c1"></span>
+        <span class="blob blob-c2"></span>
+        <span class="blob blob-c3"></span>
+      </div>
+      <header class="section-header">
+        <p class="eyebrow">Chapter One</p>
+        <h2 class="section-title">Pick a <span class="hand-accent">vibe</span></h2>
+        <p class="section-sub">What kind of day is today feeling like?</p>
+      </header>
+      <div class="category-grid" id="category-grid">
+        <!-- categories injected by JS -->
+      </div>
+    </section>
+
+    <!-- =================== PAGE 3: PLACES LIST =================== -->
+    <section id="page-places" class="page page-places" aria-label="Places list">
+      <header class="places-header">
+        <button class="btn btn-ghost back-btn" id="back-to-categories" type="button">
+          <span aria-hidden="true">←</span> Back to Categories
+        </button>
+        <p class="eyebrow" id="places-eyebrow">Chapter Two</p>
+        <h2 class="section-title" id="places-title">Places</h2>
+        <p class="section-sub" id="places-sub"></p>
+      </header>
+      <div class="places-grid" id="places-grid">
+        <!-- places injected by JS -->
+      </div>
+    </section>
+
+    <!-- =================== PAGE 4: PLACE DETAIL =================== -->
+    <section id="page-detail" class="page page-detail" aria-label="Place details">
+      <button class="btn btn-ghost back-btn detail-back" id="back-to-places" type="button">
+        <span aria-hidden="true">←</span> Back to Places
+      </button>
+      <article class="detail-card" id="detail-card">
+        <!-- detail injected by JS -->
+      </article>
+    </section>
+
+    <footer class="site-footer">
+      <p>for you &amp; me, all winter long <span aria-hidden="true">·</span> <span class="heart">♡</span></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
